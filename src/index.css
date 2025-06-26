@@ -1,0 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  background: linear-gradient(to right, #ffffff, #e0e0e0, #bdbdbd, #8e8e8e);
+backdrop-filter: blur(10px);
+border-radius: 30px;
+
+  color:  #121212; /* Deep charcoal (near-black) */
+  font-family: 'outfit';
+}
