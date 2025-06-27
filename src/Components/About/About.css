@@ -1,0 +1,65 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 130px;
+}
+.about h2{
+    text-align: center;
+    font-weight: 600;
+    font-size: 50px;
+  
+}
+.about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+    margin-top: 80px;
+
+}
+
+.about img{
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    box-shadow: 0 10px 10px rgba(0.3, 0.3, 0.3, 0.3);
+    
+    
+  
+
+}
+.about-description{
+    width: 80%;
+    color: #666;   
+    margin-left: 50px;
+    
+    
+}
+.about-description p{
+    line-height:30px;
+    font-size: 18px;
+}
+.about-skills{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about-skill{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    transition: 0.3s;
+    color: black;
+}
+.about-skills hr{
+    outline: none;
+    border: none;
+    width: 80%;
+    height: 8px;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #DF8908 10%, #b415ff 102.06%);
+}
