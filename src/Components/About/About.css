@@ -54,6 +54,7 @@
     align-items: center;
     transition: 0.3s;
     color: black;
+    font-weight: 600;
 }
 .about-skills hr{
     outline: none;
@@ -62,4 +63,25 @@
     height: 8px;
     border-radius: 50px;
     background: linear-gradient(270deg, #DF8908 10%, #b415ff 102.06%);
+}
+.about-achivements{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.about-achivement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.5s;
+}
+.about-achivement h1{
+    background: linear-gradient(270deg, #DF8908 10%, #b415ff 102.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
