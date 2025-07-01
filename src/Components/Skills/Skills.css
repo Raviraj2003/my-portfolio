@@ -1,0 +1,87 @@
+.banner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+   
+}
+
+.slider {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: rotate 40s linear infinite;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+.slider:hover {
+  animation-play-state: paused;
+}
+
+.item {
+  position: absolute;
+  inset: 0;
+  transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
+    translateZ(380px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+  
+}
+
+.item img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px #ffffffcc);
+  transition: transform 0.3s, filter 0.3s;
+  
+}
+
+.item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 15px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  filter: blur(4px);
+  z-index: 0;
+}
+.item img:hover {
+  transform: scale(1.2);
+  
+}
+
+@keyframes rotate {
+  from {
+    transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+  }
+}
+
+/* Responsive for small screens */
+@media screen and (max-width: 600px) {
+  .slider {
+    width: 90px;
+    height: 90px;
+  }
+
+  .item img {
+    width: 60px;
+    height: 60px;
+  }
+}
