@@ -20,7 +20,7 @@
     width: 70%;
     
 }
-.hero h1 span{
+.name {
     background: linear-gradient(270deg, #DF8908 10%, #b415ff 102.06%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -72,3 +72,30 @@
     transform: scale(1.05);
     border-color: #B415ff;
 }
+
+.bounce {
+  display: inline-block;
+  animation: bounce 1s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Add staggered delay */
+.delay0 { animation-delay: 0s; }
+.delay1 { animation-delay: 0.1s; }
+.delay2 { animation-delay: 0.2s; }
+.delay3 { animation-delay: 0.3s; }
+.delay4 { animation-delay: 0.4s; }
+.delay5 { animation-delay: 0.5s; }
+.delay6 { animation-delay: 0.6s; }
+.delay7 { animation-delay: 0.7s; }
+.delay8 { animation-delay: 0.8s; }
+.delay9 { animation-delay: 0.9s; }
+
